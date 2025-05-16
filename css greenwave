@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  body {
+    background: white;
+    
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-bottom: 0px solid #000;
+  }
+  
+.logo img {
+    height: 50px; /* ou o tamanho desejado */
+    width: auto;  /* mantém a proporção da imagem */
+    display: block;
+}
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    padding: 10px 20px;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    background: #00a3c4;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .icon img{
+    height:26px;
+    width: auto;
+    display: block;
+  }
+  .banner {
+    background: #00a3c4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .banner p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .banner button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 9px;
+  }
+  
+  .content {
+    padding: 30px 20px;
+    text-align: left;
+  }
+  .content1 {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .cards { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    row-gap: 60px;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 600px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  font-size: 40px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .card img{
+    height: 60px;
+    width: auto;
+  }
+  
+  .assinatura {
+    font-size: 48px;
+    color: red;
+    margin-top: 30px;
+  }
+  
+  footer {
+    background: #00a3c4;
+    height: 20px;
+  }
